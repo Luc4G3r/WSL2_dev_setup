@@ -9,7 +9,16 @@ Setup instructions WSL2 for web development (XServer and Windows GUI variants)
 
 NOTE: This instruction manual is still work in progress.
 ## WSL2, Ubuntu 20 LTS installations
+[Microsoft's instructions](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
 // TODO
+
+## HyperV
+NOTE: HyperV is not compatible with VMWare Workstation
+* To disable hypervisor (and run VMWare), run:  
+ `bcdedit /set hypervisorlaunchtype off`
+* To enable hypervisor, run:  
+ `Enable Windows Feature Hyper-V` // only required once
+ `bcdedit /set hypervisorlaunchtype auto`
 
 ## XServer
 [Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
