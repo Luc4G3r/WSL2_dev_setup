@@ -5,6 +5,7 @@ Setup instructions WSL2 for web development (XServer and Windows GUI variants)
 // TODO
 
 ## XServer
+[Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
 ### Install VcXsrv
 [Download VcXsrv](https://sourceforge.net/projects/vcxsrv/)
 * Follow installation instructions
