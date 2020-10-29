@@ -17,7 +17,7 @@ NOTE: HyperV is not compatible with VMWare Workstation
 * To disable hypervisor (and run VMWare), run:  
  `bcdedit /set hypervisorlaunchtype off`
 * To enable hypervisor, run:  
- `Enable Windows Feature Hyper-V` // only required once
+ `Enable Windows Feature Hyper-V` // only required once  
  `bcdedit /set hypervisorlaunchtype auto`
 
 ## XServer
@@ -33,23 +33,23 @@ NOTE: HyperV is not compatible with VMWare Workstation
 * Verify  
   `netstat -abno|findstr 6000`
 ### Install terminator (Connector to XServer, inside Ubuntu)
-* Install terminator
+* Install terminator  
   `apt-get install terminator`
 * Verify  
   `DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator &` should open terminator window
 ### Hook
 * create `C:\Windows\System32\wscript.exe C:\Users\<YOUR_USER>\linux\terminator\startTerminator.vbs`  
   content:  
-  ```
+  ``
     args = "-c" & " -l " & """DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator"""
     WScript.CreateObject("Shell.Application").ShellExecute "bash", args, "", "open", 0
-  ```
+  ``
 * create shortcut to `startTerminator.vbs`
 ### PHPStorm install WSL2
 [Follow systemd installation instructions](https://github.com/DamionGans/ubuntu-wsl2-systemd-script)
-* Install PHPStorm
+* Install PHPStorm  
   `snap install phpstorm --classic`
-* Verify
+* Verify  
   `phpstorm`
 
 [More details](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#run-a-linux-gui-application-in-wsl-2)
