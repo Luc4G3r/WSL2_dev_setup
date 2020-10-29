@@ -29,3 +29,5 @@ Setup instructions WSL2 for web development (XServer and Windows GUI variants)
     WScript.CreateObject("Shell.Application").ShellExecute "bash", args, "", "open", 0
   ```
 * create shortcut to `startTerminator.vbs`
+
+[More details](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#run-a-linux-gui-application-in-wsl-2)
