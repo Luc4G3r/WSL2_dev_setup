@@ -7,6 +7,7 @@ Setup instructions WSL2 for web development (XServer and Windows GUI variants)
   * Virtual Machine Performance issues
   * Dual desktops and switching between host machine and virtual machine disturbs workflows
 
+NOTE: This instruction manual is still work in progress.
 ## WSL2, Ubuntu 20 LTS installations
 // TODO
 
