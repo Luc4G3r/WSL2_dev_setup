@@ -11,7 +11,15 @@ NOTE: This instruction manual is still work in progress.
 ## WSL2, Ubuntu 20 LTS installations
 [Microsoft's instructions](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
 // TODO
-
+* In Windows User directory, create or update `.wslconfig`:  
+``
+ [wsl2]
+ memory=10GB
+ processors=8
+ swap=10GB
+ localhostForwarding=true
+``
+ * Change these values according to your needs / specs
 ## HyperV
 NOTE: HyperV is not compatible with VMWare Workstation
 * To disable hypervisor (and run VMWare), run:  
