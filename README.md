@@ -13,13 +13,13 @@ NOTE: This instruction manual is still work in progress.
 // TODO
 * In Windows User directory, create or update `.wslconfig`:  
 ``
- [wsl2]
- memory=10GB
- processors=8
- swap=10GB
- localhostForwarding=true
+ [wsl2]  
+ memory=10GB  
+ processors=8  
+ swap=10GB  
+ localhostForwarding=true  
 ``
- * Change these values according to your needs / specs
+  * Change these values according to your needs / specs
 ## HyperV
 NOTE: HyperV is not compatible with VMWare Workstation
 * To disable hypervisor (and run VMWare), run:  
