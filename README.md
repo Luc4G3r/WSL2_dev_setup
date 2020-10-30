@@ -61,3 +61,10 @@ NOTE: HyperV is not compatible with VMWare Workstation
   `phpstorm`
 
 [More details](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#run-a-linux-gui-application-in-wsl-2)
+
+## Docker
+* [Download Windows Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
+* Follow installation instructions
+
+## DDEV
+[DDEV WSL2 Setup](https://www.ddev.com/ddev-local/ddev-wsl2-getting-started/)
