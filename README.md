@@ -27,6 +27,7 @@ NOTE: HyperV is not compatible with VMWare Workstation
 * To enable hypervisor, run:  
  `Enable Windows Feature Hyper-V` // only required once  
  `bcdedit /set hypervisorlaunchtype auto`
+Restart will be needed for changes to take place.
 
 ## XServer
 [Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
@@ -61,6 +62,10 @@ NOTE: HyperV is not compatible with VMWare Workstation
   `phpstorm`
 
 [More details](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#run-a-linux-gui-application-in-wsl-2)
+
+## Or install PHPStorm on Windows
+Version 2020.1.3 supports WSL2 path, but indexing is very slow.
+[Installation Instructions](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)
 
 ## Docker
 * [Download Windows Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
