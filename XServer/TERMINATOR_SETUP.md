@@ -12,3 +12,5 @@
     WScript.CreateObject("Shell.Application").ShellExecute "bash", args, "", "open", 0
   ``
 * create shortcut to `startTerminator.vbs` to open faster
+
+[Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
