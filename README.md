@@ -30,36 +30,18 @@ NOTE: HyperV is not compatible with VMWare Workstation
 Restart will be needed for changes to take place.
 
 ## XServer
-[Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
 ### Install VcXsrv (XServer, inside Windows)
-[Download VcXsrv](https://sourceforge.net/projects/vcxsrv/)
-* Follow installation instructions
-* Create desktop shortcut for VcXsrv
-* Edit shortcut target with {{target}} :0 -ac -terminate -lesspointer -multiwindow -clipboard -wgl -dpi auto
-* Start shortcut
-* Add shortcut to autostart  
-  run `shell:startup` to open autostart
-* Verify  
-  `netstat -abno|findstr 6000`
-### Install terminator (Connector to XServer, inside Ubuntu)
-* Install terminator  
-  `apt-get install terminator`
-* Verify  
-  `DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator &` should open terminator window
-### Hook
-* create `C:\Windows\System32\wscript.exe C:\Users\<YOUR_USER>\linux\terminator\startTerminator.vbs`  
-  content:  
-  ``
-    args = "-c" & " -l " & """DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator"""
-    WScript.CreateObject("Shell.Application").ShellExecute "bash", args, "", "open", 0
-  ``
-* create shortcut to `startTerminator.vbs`
+[Show VcXsrv Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/XServer/VCXSRV_SETUP.md)
+### Install terminator (Connector to XServer, inside Ubuntu) - optional
+[Show Terminator Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/XServer/TERMINATOR_SETUP.md)
 ### PHPStorm install WSL2
+* Windows PHPStorm indexing is very slow [Jetbrains is working on this](https://youtrack.jetbrains.com/issue/IDEA-240351)
 [Follow systemd installation instructions](https://github.com/DamionGans/ubuntu-wsl2-systemd-script)
 * Install PHPStorm  
   `snap install phpstorm --classic`
-* Verify  
+* To verify, run  
   `phpstorm`
+  This should open PHPStorm on Windows XServer
 
 [More details](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#run-a-linux-gui-application-in-wsl-2)
 
