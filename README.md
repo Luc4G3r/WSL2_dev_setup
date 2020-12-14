@@ -72,5 +72,4 @@ Version 2020.1.3 supports WSL2 path, but indexing is very slow.
 * Follow installation instructions
 
 ## DDEV
-[DDEV WSL2 Setup](https://www.ddev.com/ddev-local/ddev-wsl2-getting-started/)
-* [Install Chocolatey](https://chocolatey.org/install)
+[Show DDEV Setup Instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DDEV_SETUP.md)
