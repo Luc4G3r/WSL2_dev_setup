@@ -68,8 +68,7 @@ Version 2020.1.3 supports WSL2 path, but indexing is very slow.
 [Installation Instructions](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)
 
 ## Docker
-* [Download Windows Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
-* Follow installation instructions
+[Show Docker (WSL2) Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DOCKER_SETUP.md)
 
 ## DDEV
 [Show DDEV Setup Instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DDEV_SETUP.md)
