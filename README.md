@@ -32,11 +32,11 @@ Restart will be needed for changes to take place.
 ## XServer
 ### Install VcXsrv (XServer, inside Windows)
 [Show VcXsrv Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/XServer/VCXSRV_SETUP.md)
-### Install terminator (Connector to XServer, inside Ubuntu) - optional
+### Install terminator (Example to run on XServer, inside Ubuntu) - optional
 [Show Terminator Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/XServer/TERMINATOR_SETUP.md)
 ### PHPStorm install WSL2
-* Windows PHPStorm indexing is very slow [Jetbrains is working on this](https://youtrack.jetbrains.com/issue/IDEA-240351)
-[Follow systemd installation instructions](https://github.com/DamionGans/ubuntu-wsl2-systemd-script)
+* Windows PHPStorm indexing of wsl path projects is very slow, [Jetbrains is working on this](https://youtrack.jetbrains.com/issue/IDEA-240351)  
+[Follow systemd installation instructions](https://github.com/DamionGans/ubuntu-wsl2-systemd-script) as it is required to run phpstorm from terminal
 * Install PHPStorm  
   `snap install phpstorm --classic`
 * To verify, run  
@@ -46,7 +46,7 @@ Restart will be needed for changes to take place.
 [More details](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#run-a-linux-gui-application-in-wsl-2)
 
 ## Or install PHPStorm on Windows
-Version 2020.1.3 supports WSL2 path, but indexing is very slow.
+Versions >= 2020.1.3 support WSL2 path, but indexing is VERY slow.
 [Installation Instructions](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)
 
 ## Docker
@@ -54,3 +54,7 @@ Version 2020.1.3 supports WSL2 path, but indexing is very slow.
 
 ## DDEV
 [Show DDEV Setup Instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DDEV_SETUP.md)
+
+# More information
+* Due to the architecture of WSL2, you don't want your projects being located in the windows file system (as WSL2 is slower than WSL here)
+* Instead, you create and manage your projects inside the subsystem and use Visual Studio Code (great WSL2 support Plugins available, more stable than PHPStorm right now) or any other editor software (f.e. PHPStorm inside Linux with XServer desktop connected on Windows) to edit them
