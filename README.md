@@ -46,7 +46,7 @@ Restart will be needed for changes to take place.
 [More details](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#run-a-linux-gui-application-in-wsl-2)
 
 ## Or install PHPStorm on Windows
-Versions >= 2020.1.3 support WSL2 path, but indexing is VERY slow.
+Versions >= 2020.1.3 support WSL2 path, but indexing is VERY slow.  
 [Installation Instructions](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)
 
 ## Docker
