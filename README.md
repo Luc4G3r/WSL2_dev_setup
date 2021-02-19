@@ -55,6 +55,10 @@ Versions >= 2020.1.3 support WSL2 path, but indexing is VERY slow.
 ## DDEV
 [Show DDEV Setup Instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DDEV_SETUP.md)
 
+## Docker Magneto 2 WSL 2 Setup instructions
+Work in progress.
+[Show instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DOCKER_MAGENTO2_SETUP.md)
+
 # More information
 * Due to the architecture of WSL2, you don't want your projects being located in the windows file system (as WSL2 is slower than WSL here)
 * Instead, you create and manage your projects inside the subsystem and use Visual Studio Code (great WSL2 support Plugins available, more stable than PHPStorm right now) or any other editor software (f.e. PHPStorm inside Linux with XServer desktop connected on Windows) to edit them
