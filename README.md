@@ -15,10 +15,7 @@ NOTE: This instruction manual is still work in progress.
 ```
  dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-* Check System requirements
-<figure class="video_container">
-  <iframe src="https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2" title="WSL2 System Requirements" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+* [Check System requirements](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2)
 * In Windows User directory, create or update `.wslconfig`:  
 ``
  [wsl2]  
