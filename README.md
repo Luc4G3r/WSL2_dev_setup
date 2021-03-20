@@ -8,14 +8,28 @@ Setup instructions WSL2 for web development (XServer and Windows GUI variants)
   * Dual desktops and switching between host machine and virtual machine disturbs workflows
 
 NOTE: This instruction manual is still work in progress.
-## WSL2, Ubuntu 20 LTS installations
+## WSL
 [Microsoft's instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10)  
 [Microsoft's instructions (GER)](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
+* [Check WSL2 System requirements](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2)
 * In Windows Powershell, run:
 ```
  dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-* [Check System requirements](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2)
+This activates WSL Version 1 on your system
+### Hyper V
+* In Windows Powershell, run:
+```
+ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+This enables HyperV.
+NOTE: HyperV is not compatible with VMWare Workstation
+* To disable hypervisor (and run VMWare), run:  
+ `bcdedit /set hypervisorlaunchtype off`
+* To enable hypervisor, run:  
+ `Enable Windows Feature Hyper-V` // only required once  
+ `bcdedit /set hypervisorlaunchtype auto`
+Restart will be needed for changes to take place.
 * In Windows User directory, create or update `.wslconfig`:  
 ``
  [wsl2]  
@@ -25,14 +39,18 @@ NOTE: This instruction manual is still work in progress.
  localhostForwarding=true  
 ``
   * Change these values according to your needs / specs
-## HyperV
-NOTE: HyperV is not compatible with VMWare Workstation
-* To disable hypervisor (and run VMWare), run:  
- `bcdedit /set hypervisorlaunchtype off`
-* To enable hypervisor, run:  
- `Enable Windows Feature Hyper-V` // only required once  
- `bcdedit /set hypervisorlaunchtype auto`
-Restart will be needed for changes to take place.
+### WSL2
+* [Download Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)  
+* Run the `.msi` file as administrator
+_[Click here if link above is not working](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)_
+* In Windows Powershell, run:
+```
+ wsl --set-default-version 2
+```
+
+### Ubuntu 20 LTS installation
+* To install Ubuntu 20 LTS or any other of the [supported distributions](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-6---install-your-linux-distribution-of-choice) open [Windows Store](https://aka.ms/wslstore)
+* Launch your distribution!
 
 ## XServer
 ### Install VcXsrv (XServer, inside Windows)
