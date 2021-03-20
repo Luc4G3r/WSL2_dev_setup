@@ -4,14 +4,6 @@
 * To verify installation run  
   `DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator &`  
   (should open terminator window in windows)
-* <span style="color:blue">**Be sure to allow private and public network connections through firewall**</span>
-## Hook to terminator startup (from windows)
-* create `C:\Windows\System32\wscript.exe C:\Users\<YOUR_USER>\linux\terminator\startTerminator.vbs`  
-  content:  
-  ``
-    args = "-c" & " -l " & """DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator"""
-    WScript.CreateObject("Shell.Application").ShellExecute "bash", args, "", "open", 0
-  ``
-* create shortcut to `startTerminator.vbs` to open faster
+* **IMPORTANT: Be sure to allow private and public network connections through firewall**
 
 [Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
