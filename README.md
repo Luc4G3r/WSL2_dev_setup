@@ -31,13 +31,13 @@ NOTE: HyperV is not compatible with VMWare Workstation
  `bcdedit /set hypervisorlaunchtype auto`
 Restart will be needed for changes to take place.
 * In Windows User directory, create or update `.wslconfig`:  
-``
- [wsl2]  
- memory=10GB  
- processors=8  
- swap=10GB  
- localhostForwarding=true  
-``
+```
+ [wsl2]
+ memory=10GB
+ processors=8
+ swap=10GB
+ localhostForwarding=true
+```
   * Change these values according to your needs / specs
 ### WSL2
 * [Download Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)  
