@@ -12,5 +12,11 @@
   run `shell:startup` to open autostart and copy shortcut here
 * Verify in WSL2  
   `netstat -abno|findstr 6000`
+* Make WSL2 connect to VcXsrv Desktop
+  * add variables to `~/.profile`
+```
+    export DISPLAY=${DISPLAY:-$(grep -Po '(?<=nameserver ).*' /etc/resolv.conf):0}
+    export LIBGL_ALWAYS_INDIRECT=1
+```
 
 [Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
