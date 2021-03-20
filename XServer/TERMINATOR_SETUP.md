@@ -4,6 +4,5 @@
 * To verify installation run  
   `DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator &`  
   (should open terminator window in windows)
-* **IMPORTANT: Be sure to allow private and public network connections through firewall**
 
 [Instruction source](https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3)
