@@ -4,6 +4,7 @@
 * To verify installation run  
   `DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 terminator &`  
   (should open terminator window in windows)
+* <span style="color:blue">**Be sure to allow private and public network connections through firewall**</span>
 ## Hook to terminator startup (from windows)
 * create `C:\Windows\System32\wscript.exe C:\Users\<YOUR_USER>\linux\terminator\startTerminator.vbs`  
   content:  
