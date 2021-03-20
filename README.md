@@ -41,8 +41,8 @@ Restart will be needed for changes to take place.
   * Change these values according to your needs / specs (online localhostForwarding option is mandatory)
 ### WSL2
 * [Download Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)  
-* Run the `.msi` file as administrator
 _[Click here if link above is not working](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)_
+* Run the `.msi` file as administrator
 * In Windows Powershell, run:
 ```
  wsl --set-default-version 2
