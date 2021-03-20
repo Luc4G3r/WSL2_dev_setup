@@ -38,7 +38,7 @@ Restart will be needed for changes to take place.
  swap=10GB
  localhostForwarding=true
 ```
-  * Change these values according to your needs / specs
+  * Change these values according to your needs / specs (online localhostForwarding option is mandatory)
 ### WSL2
 * [Download Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)  
 * Run the `.msi` file as administrator
