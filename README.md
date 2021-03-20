@@ -9,7 +9,8 @@ Setup instructions WSL2 for web development (XServer and Windows GUI variants)
 
 NOTE: This instruction manual is still work in progress.
 ## WSL2, Ubuntu 20 LTS installations
-[Microsoft's instructions](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
+[Microsoft's instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+[Microsoft's instructions (GER)](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
 // TODO
 * In Windows User directory, create or update `.wslconfig`:  
 ``
