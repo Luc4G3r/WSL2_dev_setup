@@ -59,7 +59,7 @@ _[Click here if link above is not working](https://wslstorestorage.blob.core.win
 [Show Terminator Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/XServer/TERMINATOR_SETUP.md)
 ### PHPStorm install WSL2
 * Windows PHPStorm indexing of wsl path projects is very slow, [Jetbrains is working on this](https://youtrack.jetbrains.com/issue/IDEA-240351)  
-[Follow systemd installation instructions](https://github.com/DamionGans/ubuntu-wsl2-systemd-script) as it is required to run phpstorm from terminal
+[Follow systemd installation instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Systemd/SYSTEMD_SETUP.md) as it is required to run phpstorm from terminal
 * Install PHPStorm  
   `snap install phpstorm --classic`
 * To verify, run  
