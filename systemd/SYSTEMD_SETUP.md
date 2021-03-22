@@ -1,3 +1,4 @@
+[See instruction source](https://github.com/DamionGans/ubuntu-wsl2-systemd-script)
 * Create /usr/sbin/start-systemd-namespace
 ```
 #!/bin/sh
@@ -77,4 +78,3 @@ if [ -n "$SYSTEMD_PID" ] && [ "$SYSTEMD_PID" != "1" ]; then
     exit 1
 fi
 ```
-[See this repo](https://github.com/DamionGans/ubuntu-wsl2-systemd-script)
