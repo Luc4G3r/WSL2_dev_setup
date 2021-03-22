@@ -3,7 +3,7 @@
 ```
 #!/bin/sh
 
-SYSTEMD_EXE="/lib/systemd/systemd --system-unit=basic.target"
+SYSTEMD_EXE="/lib/systemd/systemd --system-unit=multi-user.target"
 SYSTEMD_PID="$(ps -eo pid=,args= | awk '$2" "$3=="'"$SYSTEMD_EXE"'" {print $1}')"
 if [ "$LOGNAME" != "root" ] && ( [ -z "$SYSTEMD_PID" ] || [ "$SYSTEMD_PID" != "1" ] ); then
     export | sed -e 's/^declare -x //;/^IFS=".*[^"]$/{N;s/\n//}' | \
@@ -52,7 +52,7 @@ if ! command -v /usr/bin/unshare > /dev/null; then
     exit 1
 fi
 
-SYSTEMD_EXE="/lib/systemd/systemd --system-unit=basic.target"
+SYSTEMD_EXE="/lib/systemd/systemd --system-unit=multi-user.target"
 SYSTEMD_PID="$(ps -eo pid=,args= | awk '$2" "$3=="'"$SYSTEMD_EXE"'" {print $1}')"
 if [ -z "$SYSTEMD_PID" ]; then
     "$DAEMONIZE" /usr/bin/unshare --fork --pid --mount-proc bash -c 'export container=wsl; mount -t binfmt_misc binfmt_misc /proc/sys/fs/binfmt_misc; exec '"$SYSTEMD_EXE"
