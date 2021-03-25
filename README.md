@@ -7,7 +7,7 @@ Setup instructions WSL2 for web development (XServer and Windows GUI variants)
   * Virtual Machine Performance issues
   * Dual desktops and switching between host machine and virtual machine disturbs workflows
 
-NOTE: This instruction manual is still work in progress.
+**_NOTE: This instruction manual is still work in progress, as is WSL2. I take no responsibility for any damage done to your system._**
 ## WSL
 [Microsoft's instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10)  
 [Microsoft's instructions (GER)](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
