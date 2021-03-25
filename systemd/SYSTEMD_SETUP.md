@@ -1,5 +1,6 @@
 [See instruction source](https://github.com/DamionGans/ubuntu-wsl2-systemd-script)
-* Create /usr/sbin/start-systemd-namespace
+**_NOTE: The script from the git repo above may cause issues with snap on your system, depending on your user setup. Replace the created files with following contents:_**
+* `/usr/sbin/start-systemd-namespace`
 ```
 #!/bin/sh
 
@@ -24,7 +25,7 @@ if [ -n "$PRE_NAMESPACE_PWD" ]; then
     unset PRE_NAMESPACE_PWD
 fi
 ```
-* Create /usr/sbin/enter-systemd-namespace
+* `/usr/sbin/enter-systemd-namespace`
 ```
 #!/bin/bash --norc
 
@@ -78,3 +79,4 @@ if [ -n "$SYSTEMD_PID" ] && [ "$SYSTEMD_PID" != "1" ]; then
     exit 1
 fi
 ```
+Relevant are the lines containing `SYSTEMD_EXE="/lib/systemd/systemd --system-unit=multi-user.target"` for which the original systemd fix from the repository did not consider a difference between WSL2 and Windows user names.
