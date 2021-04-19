@@ -22,12 +22,11 @@ This activates WSL Version 1 on your system
 ```
  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
-This enables HyperV.
-NOTE: HyperV is not compatible with VMWare Workstation
+This enables HyperV.  
+**_NOTE: HyperV is not compatible with VMWare Workstation_**
 * To disable hypervisor (and run VMWare), run:  
  `bcdedit /set hypervisorlaunchtype off`
 * To enable hypervisor, run:  
- `Enable Windows Feature Hyper-V` // only required once  
  `bcdedit /set hypervisorlaunchtype auto`
 Restart will be needed for changes to take place.
 * In Windows User directory, create or update `.wslconfig`:  
