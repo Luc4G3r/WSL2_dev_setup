@@ -22,7 +22,7 @@ This activates WSL Version 1 on your system
 ```
  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
-This enables HyperV. HyperV needs CPU virtualization enabled. This feature can normally be enable via BIOS settings, but the settings name depends on your BIOS version and CPU.  
+This enables HyperV. HyperV needs CPU virtualization enabled. This feature can normally be enabled via BIOS settings, but the settings name depends on your BIOS version and CPU.  
 **_NOTE: HyperV is not compatible with VMWare Workstation_**
 * To disable hypervisor (and run VMWare), run:  
  `bcdedit /set hypervisorlaunchtype off`
