@@ -52,6 +52,7 @@ _[Click here if link above is not working](https://wslstorestorage.blob.core.win
 * Launch your distribution!
 
 ## XServer
+**_UPDATE: PHPStorm Versions >= 2021.2 are going to support WSL2 indexing! Finally, you will be able to skip the XServer Setup and simply follow the [Windows Installation Instructions for PHPStorm](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)_**
 ### Install VcXsrv (XServer, inside Windows)
 [Show VcXsrv Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/XServer/VCXSRV_SETUP.md)
 ### Install terminator (Example to run on XServer, inside Ubuntu) - optional
@@ -69,7 +70,7 @@ _[Click here if link above is not working](https://wslstorestorage.blob.core.win
 
 ## Or install PHPStorm on Windows
 Versions >= 2020.1.3 support WSL2 path, but indexing is VERY slow.  
-[Installation Instructions](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)
+[Installation Instructions](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)  
 
 ## Docker
 [Show Docker (WSL2) Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DOCKER_SETUP.md)
