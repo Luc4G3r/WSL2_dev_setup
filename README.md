@@ -27,7 +27,7 @@ This enables HyperV. HyperV needs CPU virtualization enabled. This feature can n
 * To disable hypervisor (and run VMWare), run:  
  `bcdedit /set hypervisorlaunchtype off`
 * To enable hypervisor, run:  
- `bcdedit /set hypervisorlaunchtype auto`
+ `bcdedit /set hypervisorlaunchtype auto`  
 Restart will be needed for changes to take place.
 * In Windows User directory, create or update `.wslconfig`:  
 ```
