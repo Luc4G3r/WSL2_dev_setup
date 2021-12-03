@@ -51,11 +51,8 @@ For this setup to work, you need to...
 [Show Docker Desktop (WSL2) Setup instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DOCKER_SETUP.md)
 
 ## DDEV
-[Show DDEV Setup Instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DDEV_SETUP.md)
-
-## Docker Magneto 2 WSL 2 Setup instructions
-Work in progress.
-[Show instructions]((https://ddev.readthedocs.io/en/stable/))
+[Show DDEV Setup Instructions](https://ddev.readthedocs.io/en/stable/)
+* Natively supports Magento 2 projects!
 
 # More information
 * Due to the architecture of WSL2, you don't want your projects being located in the Windows file system (as WSL2 is was slower here)
