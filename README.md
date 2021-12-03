@@ -42,7 +42,7 @@ For this setup to work, you need to...
 ```
   Change these values according to your needs / specs
 ### Ubuntu 20 LTS installation
-* To install Ubuntu 20 LTS or any other of the [supported distributions](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-6---install-your-linux-distribution-of-choice) open [Windows Store](https://aka.ms/wslstore) search for it, and run the installation
+* To install Ubuntu 20 LTS or any other of the supported distributions open [Windows Store](https://aka.ms/wslstore) search for it, and run the installation
 * Launch your distribution!
 ## PHPStorm on Windows
 [Installation Instructions](https://www.jetbrains.com/help/phpstorm/installation-guide.html#standalone)  
