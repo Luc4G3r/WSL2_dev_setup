@@ -55,7 +55,7 @@ For this setup to work, you need to...
 
 ## Docker Magneto 2 WSL 2 Setup instructions
 Work in progress.
-[Show instructions](https://github.com/Luc4G3r/WSL2_dev_setup/blob/main/Docker/DOCKER_MAGENTO2_SETUP.md)
+[Show instructions]((https://ddev.readthedocs.io/en/stable/))
 
 # More information
 * Due to the architecture of WSL2, you don't want your projects being located in the Windows file system (as WSL2 is was slower here)
