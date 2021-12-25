@@ -55,5 +55,5 @@ For this setup to work, you need to...
 * Natively supports Magento 2 projects!
 
 # More information
-* Due to the architecture of WSL2, you don't want your projects being located in the Windows file system (as WSL2 is was slower here)
+* Due to the architecture of WSL2, you don't want your projects being located in the Windows file system (as WSL2 is significantly slower here, due to file system difference)
 * Instead, you create and manage your projects inside the subsystem and use any IDE on the host Windows system to edit them
